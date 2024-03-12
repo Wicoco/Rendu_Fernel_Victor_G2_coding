@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulaire.css" />
+    <title>Site</title>
+  </head>
+  <body>
+    
+    <button id="theme">Dark mode</button>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <h1>Votre formulaire a bien été envoyé</h1>
+    </div>
+    <form id="formulaire" novalidate>
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" />
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="password1">Vérification du mot de passe</label>
+        <input type="password" name="password2" id="password2" />
+      </div>
+      <div>
+      <div>
+        <div class="radio-inline">
+          <label for="radios">Seconde</label>
+          <input type="radio" name="radios" id="radio1" value="radio1" />
+        </div>
+        <div class="radio-inline">
+          <label for="radio1">Première</label>
+          <input type="radio" name="radios" id="radio2" value="radio2" />
+        </div>
+        <div class="radio-inline">
+          <label for="radio2">Terminale</label>
+          <input type="radio" name="radios" id="radio3" value="radio3" />
+        </div>
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">Axe 1</option>
+          <option value="axe2">Axe 2</option>
+          <option value="axe3">Axe 3</option>
+        </select>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+    <script src="formulaire.js"></script>
+  </body>
+</html>
+

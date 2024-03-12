@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(255, 157, 0);;
+}
+.swiper-slide {
+    height: 80vh;
+}
+
+.swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.slide-dw {
+    background-image: url('dw-js.jpg');
+    background-size: cover;
+}
+
+.slide-cd {
+    background-image: url('cd-js.jpeg');
+    background-size: cover;
+}
+
+.slide-cdeb {
+    background-image: url('cdeb-js.jpg');
+    background-size: cover;
+}
+.subtitle {
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    background-color: rgb(184, 113, 0);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 72px;
+    color: rgb(255, 255, 255);
+    text-transform: lowercase;
+    background-color: rgb(255, 157, 0);
+}
+
+body .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+}
+
+body .swiper-pagination-bullet-active {
+    background: orangered;
+}
+
+body .swiper-button-next,
+body .swiper-button-prev {
+    color: orangered;
+}
+
+.portfolio {
+    padding: 80px 40px;
+    background-color: #F6F8FA;
+}
+
+
+.portfolio-elements {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+width: 30%;
+background-color: #ffffff;
+}
+
+.card-header {
+    padding: 20px 40px;
+    background-color: #222D3B;
+}
+
+.card-title {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card-axe {
+    font-size: 14px;
+    color: #87878a;
+    margin-top: 6px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.filters {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.filters ul {
+    display: flex; 
+    gap: 20px;
+}
+
+.filters li {
+    color: #ffffff;
+    background-color: orangered;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.filters li.active {
+    background-color: orange;
+}
+
+.portfolio-elements {
+    padding: 50px 0 !important;
+}
+
+footer {
+    background-color: orangered;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 3px;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    float: right;
+    background-color: #222D3B;
+    color: white;
+    margin-right: 30px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+}
+
+.filters {
+    text-decoration: none;
+}
+
+:active {
+    text-decoration: none;
+}
+
+
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo img {
+    width: 40px;
+    height: 40px;
+}
+header .logo h1 {
+    font-size: 30px;
+    color: #292929;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    margin-left:50px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.menu li a {
+    color: #212121;
+    transition: 0.5s;
+}
+.menu li a:hover {
+    color: #1747b5;
+    font-size: 15px;
+}
+.menu li:hover::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    z-index: -1;
+    width: 30px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+.number {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 25px;
+    background: linear-gradient(#eb4600,#180c01);
+    border-radius: 60px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.number {
+    display: none; 
+}
+
+.small_menu {
+    display: none; 
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none; 
+    }
+
+    .small_menu {
+        display: block; 
+    }
+}

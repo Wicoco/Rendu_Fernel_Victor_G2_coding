@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css">
+    <link rel ="stylesheet" href ="index.css"></link>
+</head>
+<body>
+  <header>
+      <div class="logo"onclick="toggleMenu()">
+          <h1>IIM</h1>
+      </div>
+      <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formulaire.html">Contact</a></li>
+      </ul>
+    <div class="number">
+        <p id="phoneNumber">+7(999) 123 456</p>
+    </div>
+      <div class="small_menu">
+          <span>
+              <div></div>
+              <div></div>
+          </span>
+          <span>
+              <div></div>
+              <div></div>
+          </span>
+      </div>
+
+  </header>
+
+  </div>
+ 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <div class="swiper mon-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-cd">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Axe création & design</p>
+            </div>
+            <div class="swiper-slide slide-cdeb">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Axe communication digitale</p>
+            </div>
+            <div class="swiper-slide slide-dw">
+                <p class="subtitle">Axe métier</p>
+                <p class="title">Axe développement web</p>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <main class="portfolio">
+
+        <div class="filters">
+            <ul>
+                <li data-filter="all" class="active">Tous les projets</li> 
+                <li data-filter="cd">Création & Design</li> 
+                <li data-filter="dw">Développement web</li> 
+                <li data-filter="3d">Animation 3D</li> 
+            </ul>
+        </div>
+
+        <div class="portfolio-elements">
+
+            <div class="card filtr-item" data-category="cd">
+                <div class="card-header">
+                    <p class="card-title">Motion design</p> 
+                    <div class="card-axe">Creation & Design</div> 
+                </div>
+                <a href="imagesjs/motion design.png">
+                    <img src="imagesjs/motion design.png" alt="Motion">
+                </a>
+            </div>
+
+            <div class="card filtr-item" data-category="3d">
+                <div class="card-header">
+                    <p class="card-title">Showreel</p>
+                    <div class="card-axe">Animation 3D</div> 
+                </div>
+                <a href="imagesjs/3d-model.png">
+                    <img src="imagesjs/3d-model.png" alt="Showreel">
+                </a>
+            </div>
+
+            <div class="card filtr-item" data-category="dw">
+                <div class="card-header">
+                    <p class="card-title">UX Design</p> 
+                    <div class="card-axe">Développement Web</div> 
+                </div>
+                <a href="imagesjs/UX_designer.png">
+                    <img src="imagesjs/UX_designer.png" alt="Motion">
+                </a>
+            </div>
+
+        </div>
+        <script src="index.js"></script>
+    </main>
+
+</body>
+
+<footer>
+    <a href="formulaire.html" target="_blank"><h1>S'inscrire à une journée portes ouvertes</h1></a>
+</footer>
+</html>
+
